@@ -41,6 +41,11 @@ const passengerSchema = new mongoose.Schema({
         type: String,
         required: true,
       },
+      gateChecked:{
+        type:Boolean,
+        default:false,
+        required:true
+      },
     },
     contactDetails: {
       phone: {

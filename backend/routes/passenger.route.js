@@ -16,6 +16,13 @@ router.post('/check-in', checkInPassenger);
 // In your routes file
 router.put('/:passportNumber/luggage', updateLuggageDetails);
 
+//POST request to print Boarding Pass
+router.post('/boarding-pass', checkInPassenger);
+
+router.get('/boarding-pass', (req, res) => {
+    res.status(200).json({ message: "GET request to /boarding-pass" });
+});
+
 
 // In your passenger.routes.js or main app file
 router.get('/status', (req, res) => {
