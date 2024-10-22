@@ -1,0 +1,61 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.header {
+    margin-bottom: 30px;
+}
+
+.gate-number {
+    font-size: 1.5rem;
+    color: #4a90e2;
+}
+
+.flight-number {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+}
+
+.passenger-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.passenger-table th,
+.passenger-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.passenger-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.passenger-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.no-passengers {
+    font-size: 1.2rem;
+    color: #e74c3c;
+}
+
+.loading,
+.error {
+    font-size: 1.2rem;
+    color: #e74c3c;
+}

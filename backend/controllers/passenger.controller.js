@@ -28,7 +28,7 @@ const createPassenger = async (req, res) => {
 // Check-in a passenger (find passenger by passport or ticket number)
 const checkInPassenger = async (req, res) => {
   const { passportNumber, ticketNumber } = req.body;
-
+ 
   try {
     const passenger = await Passenger.findOne({ passportNumber, ticketNumber });
 
@@ -82,6 +82,5 @@ const updateLuggageDetails = async (req, res) => {
   }
 };
 
-
-  export {createPassenger , checkInPassenger, updateLuggageDetails };
+export {createPassenger , checkInPassenger, updateLuggageDetails};
   
